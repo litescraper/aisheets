@@ -270,3 +270,11 @@ pnpm serve
 ```
 
 Then visit [http://localhost:3000/](http://localhost:3000/)
+
+## Serper-compatible endpoints
+
+Set `SERPER_BASE_URL` to the compatible provider base URL and use its key in
+`SERPER_API_KEY`. Unset, the existing `https://google.serper.dev` default is
+preserved. Trailing slashes are removed before the existing route is appended.
+
+Support any Serper.dev-compatible endpoint (like litescrape.com, serpbase.dev, serpensapi.org, and others)

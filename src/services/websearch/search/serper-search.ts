@@ -22,7 +22,7 @@ export class SerperSearch {
     }
 
     this.apiKey = key;
-    this.baseUrl = 'https://google.serper.dev/search';
+    this.baseUrl = `${(process.env.SERPER_BASE_URL || 'https://google.serper.dev').replace(/\/+$/, '')}/search`;
   }
 
   async search({
